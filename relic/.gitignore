@@ -1,0 +1,11 @@
+relic-all.c
+/.idea/
+/bin/
+CMakeCache.txt
+CMakeFiles/
+cmake-build-debug/
+/lib/
+CTestTestfile.cmake
+Makefile
+cmake_install.cmake
+/doc/relic.doxygen
