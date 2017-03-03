@@ -23,110 +23,6 @@
 #define SHORT_BENCH_LOOPS     100       // Number of iterations per bench (for expensive operations)
 #define TEST_LOOPS            1000      // Number of iterations per test
 
-void schnorrq()
-{
-    bool clear_cofactor, OK = true;
-    unsigned int n;
-    int passed;
-    point_t A; // Generator of the curve (uninit)
-
-//    printf("Init A \n");
-//    print_point_t(A);
-
-    vpoint_t VA;
-
-//    printf("Init VA \n");
-//    print_vpoint_t(VA);
-
-    vpoint_extproj_t VP;
-
-    printf("Init VP \n");
-    print_vpoint_extproj_t(VP);
-
-
-    vpoint_extproj_precomp_t VQ;
-    v2elm_t t1;
-    uint64_t scalar[4], res_x[4], res_y[4];
-
-    // Point doubling
-    passed = 1;
-    eccset(A, &curve4Q); // Define curve via generator A
-
-//    printf("After definition of A \n");
-//    print_point_t(A);
-
-    point_setup(A, VP); // manipulates VP (x==ta, y==tb, z==0)
-
-    printf("Manipulate VP \n");
-    print_vpoint_extproj_t(VP);
-
-    for (n=0; n<TEST_LOOPS; n++)
-    {
-        eccdouble(VP);                     // 2*P
-        if(n==0) {
-            printf("First loop Loop VP \n");
-            print_vpoint_extproj_t(VP);
-        }
-    }
-
-
-    printf("After Loop VA \n");
-    print_vpoint_t(VA);
-
-    printf("After Loop VP \n");
-    print_vpoint_extproj_t(VP);
-
-    eccnorm(VP, VA); // changes VP.z ; changes VA
-    // VP.z = normiert(VP.z)
-    // VA.x = VP.x / VP.z
-    // VA.y = VP.y / VP.z
-
-    printf("After normalisation VP \n");
-    print_vpoint_extproj_t(VP);
-
-    printf("After normalisation VA \n");
-    print_vpoint_t(VA);
-
-    from_ext_to_std(VA->x, A->x); // change A (not equal tp VA)
-    from_ext_to_std(VA->y, A->y); // change A (not equal tp VA)
-
-//    printf("After manipulation with VP: A= \n");
-//    print_point_t(A);
-
-    // Result
-    res_x[0] = 0xC9099C54855859D6; res_x[1] = 0x2C3FD8822C82270F; res_x[2] = 0xA7B3F6E2043E8E68; res_x[3] = 0x4DA5B9E83AA7A1B2;
-    res_y[0] = 0x3EE089F0EB49AA14; res_y[1] = 0x2001EB3A57688396; res_y[2] = 0x1FEE5617A7E954CD; res_y[3] = 0x0FFDB0D761421F50;
-
-    int res = fp2compare64((uint64_t*)A->x, res_x);
-    printf("Res: %d \n", res);
-
-
-    /**
-     * HASH SHA512
-     */
-    #define MESSAGE_SIZE 140 // Byte
-    #define HASH_SIZE 64 // SHA512 --> 512 Bit == 64 Byte
-    unsigned char message[MESSAGE_SIZE]; // the message to be signed
-    unsigned char hash[HASH_SIZE]; // The hash of the message
-    unsigned int i; // Loop counter
-
-    // Remove for same random each time
-    time_t t;
-    srand((unsigned) time(&t)); // Init random number generator
-
-    // Init message
-    for(i = 0; i < MESSAGE_SIZE; i++) {
-        message[i] = rand();
-    }
-    printf("Message: \n");
-    print_hex(message, MESSAGE_SIZE);
-
-    // Generate Hash
-    sha512(message, MESSAGE_SIZE, hash);
-    printf("Hash: \n", hash);
-    print_hex(hash, HASH_SIZE);
-}
-
 bool ecc_test()
 {
     bool clear_cofactor, OK = true;
@@ -872,14 +768,12 @@ bool ecc_run()
 } 
 
 
-int main()
-{
-    bool OK = true;
-
+//int main()
+//{
+//    bool OK = true;
+//
 //    OK = OK && ecc_test();         // Test FourQ's curve functions
 //    OK = OK && ecc_run();          // Benchmark FourQ's curve functions
-
-    schnorrq();
-    
-    return OK;
-}
+//
+//    return OK;
+//}

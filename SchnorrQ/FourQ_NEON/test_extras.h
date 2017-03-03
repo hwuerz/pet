@@ -31,6 +31,18 @@ int fpcompare64(uint64_t* a, uint64_t* b);
 // Comparing uint64_t digits of two quadratic extension field elements, ai=bi? : (0) equal, (1) unequal
 int fp2compare64(uint64_t* a, uint64_t* b);
 
+// Prints a point_t in hex
+void print_point_t(point_t A);
+
+// Prints a vpoint_t in hex
+void print_vpoint_t(vpoint_t VA);
+
+// Prints a vpoint_extproj_t in hex
+void print_vpoint_extproj_t(vpoint_extproj_t VP);
+
+// Prints the char array with the passed size in hex
+void print_hex(const char* data, unsigned const int size);
+
 // Generating a pseudo-random scalar value in [0, 2^256-1] 
 void random_scalar_test(uint64_t* a);
 

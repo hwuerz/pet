@@ -13,4 +13,11 @@ typedef unsigned char schnorr_hash[HASH_SIZE];
 typedef unsigned char schnorr_message[MESSAGE_SIZE];
 typedef unsigned char schnorr_secret_key[SECRET_KEY_SIZE];
 
+void init_message(schnorr_message* message);
+void init_key(schnorr_secret_key* key);
+void init_random(unsigned char* array, unsigned const int size);
+void init_deterministic(unsigned char* array, unsigned int size, unsigned char data);
+void setup_B(point_t B);
+bool is_negative(f2elm_t x);
+
 #endif //FOURQ_NEON_SCHNORRQ_H

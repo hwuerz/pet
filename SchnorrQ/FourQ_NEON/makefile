@@ -45,7 +45,7 @@ LDFLAGS=
 
 OBJECTS=FourQ.o eccp2.o fp2_1271_NEON.o sha2.o
 OBJECTS_ECC_TEST=ecc_tests.o test_extras.o $(OBJECTS)
-OBJECTS_SCHNORRQ=schnorrq.o test_extras.o $(OBJECTS)
+OBJECTS_SCHNORRQ=schnorrq.o ecc_tests.o test_extras.o $(OBJECTS)
 OBJECTS_ALL=$(OBJECTS) $(OBJECTS_ECC_TEST) $(OBJECTS_SCHNORRQ)
 
 schnorrq: $(OBJECTS_SCHNORRQ)

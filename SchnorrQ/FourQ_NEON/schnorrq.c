@@ -4,15 +4,18 @@
 
 #include "schnorrq.h"
 #include "FourQ_internal.h"
+#include "FourQ.h"
 #include "test_extras.h"
 #include <malloc.h>
 #include <stdio.h>
+#include <stdbool.h>
 
 /**
  * creates a message which can be signed
  * @param message Pointer to the message
  */
-void init_message(schnorr_message* message) {
+void init_message(schnorr_message* message)
+{
     unsigned char* message_array = (unsigned char*) message;
     init_deterministic(message_array, MESSAGE_SIZE, 0xaa);
 }
@@ -21,7 +24,8 @@ void init_message(schnorr_message* message) {
  * Generates a random secret key which can be used to sign messages
  * @param key A pointer to the key
  */
-void init_key(schnorr_secret_key* key) {
+void init_key(schnorr_secret_key* key)
+{
     unsigned char* key_array = (unsigned char*) key;
     init_random(key_array, SECRET_KEY_SIZE);
 }
@@ -31,7 +35,8 @@ void init_key(schnorr_secret_key* key) {
  * @param array The array which should be filled
  * @param size The size of the array in bytes
  */
-void init_random(unsigned char* array, unsigned const int size) {
+void init_random(unsigned char* array, unsigned const int size)
+{
     // Init random
     time_t t;
     srand((unsigned) time(&t)); // Init random number generator
@@ -49,7 +54,8 @@ void init_random(unsigned char* array, unsigned const int size) {
  * @param size The size of the array
  * @param data The data which should be replicated in the array
  */
-void init_deterministic(unsigned char* array, unsigned int size, unsigned char data) {
+void init_deterministic(unsigned char* array, unsigned int size, unsigned char data)
+{
     // Init message
     unsigned int i;
     for(i = 0; i < size; i++) {
@@ -57,7 +63,12 @@ void init_deterministic(unsigned char* array, unsigned int size, unsigned char d
     }
 }
 
-void setup_B(point_t B) {
+/**
+ * Setups B based on the SchnorrQ definition
+ * @param B The point which should be used for B
+ */
+void setup_B(point_t B)
+{
     felm_t* x = (felm_t*) B->x;
 
     /*
@@ -120,8 +131,13 @@ void setup_B(point_t B) {
 //    print_hex(y_b, 16);
 }
 
-bool is_negative(f2elm_t x) {
-    felm_t* x_array = (felm_t*)x;
+/**
+ * Checks whether the passed element is negative, based on the definition of SchnorrQ
+ * @param x The element to be checked
+ * @return True if x is negative, false otherwise
+ */
+bool is_negative(f2elm_t x)
+{
     digit_t* x_a = x[0];
     digit_t* x_b = x[1];
     digit_t mask_for_126 = 0x40000000; // 2^30 == 1; other == 0
@@ -139,20 +155,20 @@ bool is_negative(f2elm_t x) {
     return false;
 }
 
-int main() {
+int main()
+{
 
     // Declare variables
     schnorr_message message; // the message to be signed
     schnorr_hash hash; // The hash of the message
     schnorr_secret_key key; // The secret key used to sign
-    unsigned int i; // Loop counter
 
     // Init message
     init_message(message);
     printf("Message: \n");
-    print_hex(message, MESSAGE_SIZE);
+    print_hex((char*)message, MESSAGE_SIZE);
 
-//    // Generate Hash
+//    // Generate Hash of the message (optional)
 //    sha512(message, MESSAGE_SIZE, hash);
 //    printf("Hash Message: \n");
 //    print_hex(hash, HASH_SIZE);
@@ -160,17 +176,23 @@ int main() {
     // Generate key
     init_key(key);
     printf("Secret key: \n");
-    print_hex(key, SECRET_KEY_SIZE);
+    print_hex((char*)key, SECRET_KEY_SIZE);
 
     // Generate Hash
     sha512(key, SECRET_KEY_SIZE, hash);
     printf("Hash Key: \n");
-    print_hex(hash, HASH_SIZE);
+    print_hex((char*)hash, HASH_SIZE);
 
     point_t B;
     setup_B(B);
     printf("B = \n");
     print_point_t(B);
 
-    return 0;
+
+    bool OK = true;
+
+    OK = OK && ecc_test();         // Test FourQ's curve functions
+    OK = OK && ecc_run();          // Benchmark FourQ's curve functions
+
+    return OK;
 }

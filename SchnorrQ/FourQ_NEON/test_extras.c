@@ -49,17 +49,12 @@ void print_point_t(point_t A)
     uint64_t* x = (uint64_t*)A->x;
     uint64_t* y = (uint64_t*)A->y;
 
-    unsigned int i;
     printf(" x");
-    print_hex(x, 32);
-//    for (i = 0; i < (2*NWORDS64_FIELD); i++) {
-//        printf(" %016llX", x[i]);
-//    }
+    print_hex((char*)x, 32);
+
     printf(" y");
-    print_hex(y, 32);
-//    for (i = 0; i < (2*NWORDS64_FIELD); i++) {
-//        printf(" %016llX", y[i]);
-//    }
+    print_hex((char*)y, 32);
+
     printf("\n");
 }
 
@@ -68,17 +63,12 @@ void print_vpoint_t(vpoint_t VA)
     uint64_t* x = (uint64_t*)VA->x;
     uint64_t* y = (uint64_t*)VA->y;
 
-    unsigned int i;
     printf(" x  (320Bit):");
-    print_hex(x, 2*VWORDS_FIELD);
-//    for (i = 0; i < (VWORDS_FIELD); i++) {
-//        printf(" %016llX", x[i]);
-//    }
+    print_hex((char*)x, 2*VWORDS_FIELD);
+
     printf("\n y  (320Bit):");
-    print_hex(y, 2*VWORDS_FIELD);
-//    for (i = 0; i < (VWORDS_FIELD); i++) {
-//        printf(" %016llX", y[i]);
-//    }
+    print_hex((char*)y, 2*VWORDS_FIELD);
+
     printf("\n");
 }
 
@@ -114,7 +104,8 @@ void print_vpoint_extproj_t(vpoint_extproj_t VP)
     printf("\n");
 }
 
-void print_hex(const char* data, unsigned const int size) {
+void print_hex(const char* data, unsigned const int size)
+{
     printf(" (%4d Bit):", (size*8));
     unsigned int i;
     for(i = 0; i < size; i++) {
@@ -126,36 +117,12 @@ void print_hex(const char* data, unsigned const int size) {
     printf("\n");
 }
 
-//void print_bin(const char* data, unsigned const int size) {
-//    printf(" (%4d Bit):", (size*8));
-//    unsigned int i;
-//    unsigned int j;
-//    for(i = 0; i < size; i++) {
-//        unsigned char* current_char = data[i];
-//        for(j = 128; j > 0; j >>= 1) {
-//            if()
-//        }
-//        printf("%02X", );
-//    }
-//    printf("\n");
-//}
-
 int fp2compare64(uint64_t* a, uint64_t* b)
 { // Comparing uint64_t digits of two quadratic extension field elements, ai=bi? : (0) equal, (1) unequal
   // NOTE: this function does not have constant-time execution. TO BE USED FOR TESTING ONLY.
     unsigned int i;
 
     for (i = 0; i < (2*NWORDS64_FIELD); i++) {
-//        long long tmp = 42;
-//        printf("SIZE int: %d \n", sizeof(tmp));
-//        printf("SIZE: %d \n", sizeof(a[i]));
-//        printf("tmp: %" PRIx64 "\n", tmp);
-//        printf("tmp: %016X \n", tmp);
-//        printf("tmp: %d \n", tmp);
-//        printf("Korrekt: %" PRIx64 "\n", a[i]);
-
-//        printf("a = %llx \n", a[i]);
-//        printf("b = %llx \n", b[i]);
         if (a[i] != b[i]) return 1;
     }
     

@@ -1,8 +1,10 @@
 #!/usr/bin/env bash
 
+# Delete old files
 rm ecc_test
 rm schnorrq
-rm *.o
+make clean
+
 
 export NDK=/home/hendrik/Android/Sdk/ndk-bundle-10e
 SYSROOT=$NDK/platforms/android-21/arch-arm
