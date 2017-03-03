@@ -8,7 +8,6 @@
 #include "test_extras.h"
 #include <malloc.h>
 #include <stdio.h>
-#include <stdbool.h>
 
 /**
  * creates a message which can be signed

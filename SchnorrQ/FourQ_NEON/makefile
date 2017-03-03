@@ -78,5 +78,5 @@ schnorrq.o: schnorrq.c FourQ_internal.h
 .PHONY: clean
 
 clean:
-	rm -f ecc_test fp2_1271_NEON.o $(OBJECTS_ALL)
+	rm -f schnorrq ecc_test fp2_1271_NEON.o $(OBJECTS_ALL)
 
