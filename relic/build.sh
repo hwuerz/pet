@@ -1,26 +1,27 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
-#export SYSROOT=/home/hendrik/Android/Sdk/ndk-bundle/platforms/android-19/arch-arm/
-#export ADB=/home/hendrik/Android/Sdk/platform-tools/adb
-#export CXX=/home/hendrik/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/arm-linux-androideabi-gcc
-#export CC=/home/hendrik/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/arm-linux-androideabi-gcc
+export NDK=/home/hendrik/Android/Sdk/ndk-bundle-10e
 
-#MAXOPTIMIZATIONS = -DuECC_SQUARE_FUNC=1 -DuECC_SUPPORT_COMPRESSED_POINT=0 -DuECC_ENABLE_VLI_API=1 -DuECC_OPTIMIZATION_LEVEL=4
-#CFLAGS = -Wall -O3 -fomit-frame-pointer -static
-#
-#$(CXX) $(CFLAGS) $(MAXOPTIMIZATIONS) --sysroot=$(SYSROOT)
-#
-#rm -r cmake-build-debug
+SYSROOT=$NDK/platforms/android-18/arch-arm
+MIDDLE=toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/
+PREF=arm-linux-androideabi-
 
+MAXOPTIMIZATIONS="-DuECC_SQUARE_FUNC=1 -DuECC_SUPPORT_COMPRESSED_POINT=0 -DuECC_ENABLE_VLI_API=1 -DuECC_OPTIMIZATION_LEVEL=4"
+CFLAGS="-Wall -O3 -fomit-frame-pointer -static"
+export CC="$NDK/$MIDDLE/${PREF}gcc --sysroot=$SYSROOT"
+export CXX="$NDK/$MIDDLE/${PREF}g++ --sysroot=$SYSROOT"
+export LD="$NDK/$MIDDLE/${PREF}ld --sysroot=$SYSROOT"
+export CPP="$NDK/$MIDDLE/${PREF}cpp --sysroot=$SYSROOT"
+export AS="$NDK/$MIDDLE/${PREF}as --sysroot=$SYSROOT"
+export OBJCOPY="$NDK/$MIDDLE/${PREF}objcopy --sysroot=$SYSROOT"
+export OBJDUMP="$NDK/$MIDDLE/${PREF}objdump --sysroot=$SYSROOT"
+export STRIP="$NDK/$MIDDLE/${PREF}strip --sysroot=$SYSROOT"
+export RANLIB="$NDK/$MIDDLE/${PREF}ranlib --sysroot=$SYSROOT"
+export CCLD="$NDK/$MIDDLE/${PREF}gcc --sysroot=$SYSROOT"
+export AR="$NDK/$MIDDLE/${PREF}ar --sysroot=$SYSROOT"
 
-clear
+cmake -DWITH="DV;BN;MD;FP;EP;FPX;EPX;PP;PC;CP" -DCHECK=off -DARITH=arm-asm-254 -DARCH=ARM -DCOLOR=off -DOPSYS=DROID -DFP_PRIME=254 -DFP_QNRES=on -DFP_METHD="INTEG;INTEG;INTEG;MONTY;EXGCD;SLIDE" -DFPX_METHD="INTEG;INTEG;LAZYR" -DPP_METHD="LAZYR;OATEP" -DCOMP="-Wall -O3 -funroll-loops -fomit-frame-pointer -I/home/hendrik/Android/Sdk/ndk-bundle/platforms/android-14/arch-arm/usr/include -DuECC_SQUARE_FUNC=1 -DuECC_SUPPORT_COMPRESSED_POINT=0 -DuECC_ENABLE_VLI_API=1 -DuECC_OPTIMIZATION_LEVEL=4 -fPIC" -DLINK="-L/home/hendrik/Android/Sdk/ndk-bundle/platforms/android-14/arch-arm/usr/lib/ -llog -pie" -DTIMER=HREAL -DWORD=32 -DSTLIB=on -DBN_PRECI=3072 -DBENCH=10 -DSHLIB=off $1
 
-git clean -f -d
-
-cmake ./CMakeLists.txt
-cd cmake-build-debug
 make
-cd bin
-./test_cp
-
-cd ../../
+adb push bin/bench_cp /data/local/tmp
+adb shell "cd /data/local/tmp && ./bench_cp"
