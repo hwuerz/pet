@@ -1,7 +1,7 @@
                             Hinweise für das PET Projekt
                             ============================
 
-!!!! ACHTUNG: Die Version ist zwar lauffähig, aber man erhält einen Fehler bei der Verifikation einer validen Signatur - also noch nicht ganz fertig. !!!!
+**** ACTHTUNG: Die Version ist zwar lauffähig, aber valide Signaturen werden nicht als solche erkannt - irgendwo ein Fehler... ****
 
 ___ Lauffähig machen & Ausführen ____
 
