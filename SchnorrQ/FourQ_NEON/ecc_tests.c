@@ -19,8 +19,8 @@
 
 
 // Benchmark and test parameters 
-#define BENCH_LOOPS           1000      // Number of iterations per bench
-#define SHORT_BENCH_LOOPS     100       // Number of iterations per bench (for expensive operations)
+#define BENCH_LOOPS           10000      // Number of iterations per bench
+#define SHORT_BENCH_LOOPS     10000       // Number of iterations per bench (for expensive operations)
 #define TEST_LOOPS            1000      // Number of iterations per test
 
 bool ecc_test()
