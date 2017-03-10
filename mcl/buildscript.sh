@@ -1,10 +1,12 @@
 #!/bin/bash
 cd adt/mcladt
 
+ADB=/home/nils/Android/Sdk/platform-tools/adb
+
 #####################################################
 # Path to Android SDK
 #####################################################
-export ANDROID_HOME=/home/david/Android/Sdk
+export ANDROID_HOME=/home/nils/Android/Sdk
 #####################################################
 # Path to Android NDK
 #####################################################
@@ -26,9 +28,11 @@ export ANT=/usr/share/ant/bin
 #####################################################
 export PATH="${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools:${TC}:${ANDROID_NDK_HOME}:${JDK}:${ANT}:$PATH"
 
+#export NDK_PROJECT_PATH=/home/nils/Documents/pet/Working/share/pet/mcl
+
 ndk-build
 ant debug
 echo "INSTALLING APK..."
-adb install -r bin/MainActivity-debug.apk
+$ADB install -r bin/MainActivity-debug.apk
 echo "STARTING APP ON YOUR DEVICE..."
-adb shell am start -n com.herumi.mcladt/com.herumi.mcladt.MainActivity
+$ADB shell am start -n com.herumi.mcladt/com.herumi.mcladt.MainActivity
