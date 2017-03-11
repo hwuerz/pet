@@ -18,3 +18,10 @@ ___ Verändern der Ausführungsparameter ___
 1. In main_pet.c die Variablen "MSG_LEN", "NUM_SIGN" verändern
 
 2. Neu kompilieren und ausführen
+
+
+___ Quellen ___
+
+http://bench.cr.yp.to/supercop.html
+
+http://bitbucket.org/dholth/ed25519ll/
