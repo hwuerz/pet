@@ -135,9 +135,9 @@ static void rsa(void) {
 	BENCH_ONCE("cp_rsa_gen_basic", cp_rsa_gen_basic(pub, prv, RELIC_BN_BITS));
 
 
-    BENCH_BEGIN("cp_rsa_gen_basic real bench") {
-            BENCH_ADD(cp_rsa_gen_basic(pub, prv, RELIC_BN_BITS));
-    } BENCH_END;
+//    BENCH_BEGIN("cp_rsa_gen_basic real bench") {
+//            BENCH_ADD(cp_rsa_gen_basic(pub, prv, RELIC_BN_BITS));
+//    } BENCH_END;
 
 	BENCH_BEGIN("cp_rsa_sig_basic (h = 0)") {
 		out_len = RELIC_BN_BITS / 8 + 1;
@@ -159,9 +159,9 @@ static void rsa(void) {
 	BENCH_ONCE("cp_rsa_gen_quick", cp_rsa_gen_quick(pub, prv, RELIC_BN_BITS));
 
 
-    BENCH_BEGIN("cp_rsa_gen_quick real bench") {
-            BENCH_ADD(cp_rsa_gen_quick(pub, prv, RELIC_BN_BITS));
-    } BENCH_END;
+//    BENCH_BEGIN("cp_rsa_gen_quick real bench") {
+//            BENCH_ADD(cp_rsa_gen_quick(pub, prv, RELIC_BN_BITS));
+//    } BENCH_END;
 
 	BENCH_BEGIN("cp_rsa_sig_quick (h = 0)") {
 		out_len = RELIC_BN_BITS / 8 + 1;
