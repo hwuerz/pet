@@ -3,12 +3,11 @@
 # Delete old files
 make clean
 
-export NDK=/home/nils/Android/Sdk/ndk-bundle
+export NDK=/home/hendrik/Android/Sdk/ndk-bundle-10e
 
 SYSROOT=$NDK/platforms/android-21/arch-arm
 MIDDLE=toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin
 PREF=arm-linux-androideabi-
-ADB=/home/nils/Android/Sdk/platform-tools/adb
 
 MAXOPTIMIZATIONS="-DuECC_SQUARE_FUNC=1 -DuECC_SUPPORT_COMPRESSED_POINT=0 -DuECC_ENABLE_VLI_API=1 -DuECC_OPTIMIZATION_LEVEL=4"
 
@@ -26,6 +25,6 @@ export AR="$NDK/$MIDDLE/${PREF}ar --sysroot=$SYSROOT"
 
 make CC="$NDK/$MIDDLE/${PREF}gcc --sysroot=$SYSROOT" ARCH=ARM INTERLEAVE=TRUE MIX_ARM_NEON=TRUE
 
-"$ADB" push schnorrq /data/local/tmp
-"$ADB" shell "cd /data/local/tmp && ./schnorrq"
-"$ADB" shell "rm /data/local/tmp/schnorrq"
+adb push schnorrq /data/local/tmp
+adb shell "cd /data/local/tmp && ./schnorrq"
+adb shell "rm /data/local/tmp/schnorrq"
