@@ -1,0 +1,1 @@
+/usr/bin/cc             -fPIE -g    -fPIE -pie CMakeFiles/sdh_zk_demo.dir/demo/sdh_zk_demo.c.o  -o out/bin/sdh_zk_demo -rdynamic out/static/libbipair_in_c-ARCH_X86.a 

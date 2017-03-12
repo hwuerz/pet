@@ -1,0 +1,1308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="bipair_in_c"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\cmake\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="package">
+				<Option working_dir="/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 package"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="bench">
+				<Option output="/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/out/bin/bench" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/out/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/falx/Development/PET/pairings_in_c/framework/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.3.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.3.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 bench"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="bench/fast">
+				<Option output="/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/out/bin/bench" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/out/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/falx/Development/PET/pairings_in_c/framework/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.3.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.3.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 bench/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test_ecfp2">
+				<Option output="/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/out/bin/test_ecfp2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/out/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/falx/Development/PET/pairings_in_c/framework/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.3.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.3.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 test_ecfp2"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test_ecfp2/fast">
+				<Option output="/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/out/bin/test_ecfp2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/out/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/falx/Development/PET/pairings_in_c/framework/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.3.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.3.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 test_ecfp2/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test_sha">
+				<Option output="/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/out/bin/test_sha" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/out/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/falx/Development/PET/pairings_in_c/framework/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.3.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.3.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 test_sha"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test_sha/fast">
+				<Option output="/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/out/bin/test_sha" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/out/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/falx/Development/PET/pairings_in_c/framework/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.3.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.3.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 test_sha/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test_ecfp">
+				<Option output="/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/out/bin/test_ecfp" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/out/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/falx/Development/PET/pairings_in_c/framework/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.3.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.3.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 test_ecfp"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test_ecfp/fast">
+				<Option output="/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/out/bin/test_ecfp" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/out/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/falx/Development/PET/pairings_in_c/framework/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.3.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.3.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 test_ecfp/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test_bigint">
+				<Option output="/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/out/bin/test_bigint" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/out/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/falx/Development/PET/pairings_in_c/framework/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.3.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.3.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 test_bigint"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test_bigint/fast">
+				<Option output="/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/out/bin/test_bigint" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/out/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/falx/Development/PET/pairings_in_c/framework/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.3.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.3.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 test_bigint/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ecfp2_hdl">
+				<Option output="/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/out/bin/ecfp2_hdl" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/out/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/falx/Development/PET/pairings_in_c/framework/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.3.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.3.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 ecfp2_hdl"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ecfp2_hdl/fast">
+				<Option output="/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/out/bin/ecfp2_hdl" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/out/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/falx/Development/PET/pairings_in_c/framework/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.3.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.3.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 ecfp2_hdl/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test_bbkem">
+				<Option output="/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/out/bin/test_bbkem" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/out/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/falx/Development/PET/pairings_in_c/framework/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.3.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.3.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 test_bbkem"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test_bbkem/fast">
+				<Option output="/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/out/bin/test_bbkem" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/out/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/falx/Development/PET/pairings_in_c/framework/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.3.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.3.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 test_bbkem/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="fp_hdl">
+				<Option output="/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/out/bin/fp_hdl" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/out/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/falx/Development/PET/pairings_in_c/framework/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.3.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.3.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 fp_hdl"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="fp_hdl/fast">
+				<Option output="/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/out/bin/fp_hdl" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/out/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/falx/Development/PET/pairings_in_c/framework/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.3.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.3.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 fp_hdl/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gss_hwang_demo">
+				<Option output="/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/out/bin/gss_hwang_demo" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/out/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/falx/Development/PET/pairings_in_c/framework/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.3.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.3.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 gss_hwang_demo"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gss_hwang_demo/fast">
+				<Option output="/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/out/bin/gss_hwang_demo" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/out/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/falx/Development/PET/pairings_in_c/framework/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.3.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.3.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 gss_hwang_demo/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test_fp12">
+				<Option output="/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/out/bin/test_fp12" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/out/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/falx/Development/PET/pairings_in_c/framework/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.3.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.3.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 test_fp12"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test_fp12/fast">
+				<Option output="/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/out/bin/test_fp12" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/out/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/falx/Development/PET/pairings_in_c/framework/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.3.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.3.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 test_fp12/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="experiment">
+				<Option output="/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/out/bin/experiment" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/out/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/falx/Development/PET/pairings_in_c/framework/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.3.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.3.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 experiment"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="experiment/fast">
+				<Option output="/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/out/bin/experiment" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/out/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/falx/Development/PET/pairings_in_c/framework/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.3.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.3.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 experiment/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test_fp2">
+				<Option output="/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/out/bin/test_fp2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/out/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/falx/Development/PET/pairings_in_c/framework/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.3.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.3.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 test_fp2"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test_fp2/fast">
+				<Option output="/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/out/bin/test_fp2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/out/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/falx/Development/PET/pairings_in_c/framework/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.3.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.3.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 test_fp2/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test_fp">
+				<Option output="/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/out/bin/test_fp" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/out/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/falx/Development/PET/pairings_in_c/framework/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.3.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.3.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 test_fp"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test_fp/fast">
+				<Option output="/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/out/bin/test_fp" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/out/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/falx/Development/PET/pairings_in_c/framework/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.3.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.3.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 test_fp/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test_fp4">
+				<Option output="/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/out/bin/test_fp4" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/out/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/falx/Development/PET/pairings_in_c/framework/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.3.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.3.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 test_fp4"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test_fp4/fast">
+				<Option output="/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/out/bin/test_fp4" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/out/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/falx/Development/PET/pairings_in_c/framework/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.3.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.3.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 test_fp4/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test_optate_pairing">
+				<Option output="/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/out/bin/test_optate_pairing" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/out/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/falx/Development/PET/pairings_in_c/framework/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.3.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.3.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 test_optate_pairing"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test_optate_pairing/fast">
+				<Option output="/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/out/bin/test_optate_pairing" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/out/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/falx/Development/PET/pairings_in_c/framework/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.3.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.3.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 test_optate_pairing/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="pairing_demo">
+				<Option output="/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/out/bin/pairing_demo" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/out/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/falx/Development/PET/pairings_in_c/framework/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.3.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.3.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 pairing_demo"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="pairing_demo/fast">
+				<Option output="/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/out/bin/pairing_demo" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/out/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/falx/Development/PET/pairings_in_c/framework/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.3.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.3.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 pairing_demo/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="all_in_one_demo">
+				<Option output="/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/out/bin/all_in_one_demo" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/out/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/falx/Development/PET/pairings_in_c/framework/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.3.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.3.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 all_in_one_demo"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="all_in_one_demo/fast">
+				<Option output="/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/out/bin/all_in_one_demo" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/out/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/falx/Development/PET/pairings_in_c/framework/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.3.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.3.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 all_in_one_demo/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ibe_demo">
+				<Option output="/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/out/bin/ibe_demo" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/out/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/falx/Development/PET/pairings_in_c/framework/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.3.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.3.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 ibe_demo"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ibe_demo/fast">
+				<Option output="/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/out/bin/ibe_demo" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/out/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/falx/Development/PET/pairings_in_c/framework/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.3.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.3.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 ibe_demo/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ecfp_hdl">
+				<Option output="/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/out/bin/ecfp_hdl" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/out/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/falx/Development/PET/pairings_in_c/framework/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.3.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.3.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 ecfp_hdl"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ecfp_hdl/fast">
+				<Option output="/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/out/bin/ecfp_hdl" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/out/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/falx/Development/PET/pairings_in_c/framework/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.3.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.3.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 ecfp_hdl/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="package_source">
+				<Option working_dir="/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 package_source"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/falx/Development/PET/pairings_in_c/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/falx/Development/PET/pairings_in_c/framework/benchmark/bench.c">
+			<Option target="bench"/>
+		</Unit>
+		<Unit filename="/home/falx/Development/PET/pairings_in_c/framework/demo/all_in_one_demo.c">
+			<Option target="all_in_one_demo"/>
+		</Unit>
+		<Unit filename="/home/falx/Development/PET/pairings_in_c/framework/demo/gss_hwang_demo.c">
+			<Option target="gss_hwang_demo"/>
+		</Unit>
+		<Unit filename="/home/falx/Development/PET/pairings_in_c/framework/demo/ibe_demo.c">
+			<Option target="ibe_demo"/>
+		</Unit>
+		<Unit filename="/home/falx/Development/PET/pairings_in_c/framework/demo/pairing_demo.c">
+			<Option target="pairing_demo"/>
+		</Unit>
+		<Unit filename="/home/falx/Development/PET/pairings_in_c/framework/src/assert.c">
+			<Option target="bench"/>
+			<Option target="test_ecfp2"/>
+			<Option target="test_sha"/>
+			<Option target="test_ecfp"/>
+			<Option target="test_bigint"/>
+			<Option target="ecfp2_hdl"/>
+			<Option target="test_bbkem"/>
+			<Option target="fp_hdl"/>
+			<Option target="gss_hwang_demo"/>
+			<Option target="test_fp12"/>
+			<Option target="experiment"/>
+			<Option target="test_fp2"/>
+			<Option target="test_fp"/>
+			<Option target="test_fp4"/>
+			<Option target="test_optate_pairing"/>
+			<Option target="pairing_demo"/>
+			<Option target="all_in_one_demo"/>
+			<Option target="ibe_demo"/>
+			<Option target="ecfp_hdl"/>
+		</Unit>
+		<Unit filename="/home/falx/Development/PET/pairings_in_c/framework/src/base/std/bigint/bi.c">
+			<Option target="bench"/>
+			<Option target="test_ecfp2"/>
+			<Option target="test_sha"/>
+			<Option target="test_ecfp"/>
+			<Option target="test_bigint"/>
+			<Option target="ecfp2_hdl"/>
+			<Option target="test_bbkem"/>
+			<Option target="fp_hdl"/>
+			<Option target="gss_hwang_demo"/>
+			<Option target="test_fp12"/>
+			<Option target="experiment"/>
+			<Option target="test_fp2"/>
+			<Option target="test_fp"/>
+			<Option target="test_fp4"/>
+			<Option target="test_optate_pairing"/>
+			<Option target="pairing_demo"/>
+			<Option target="all_in_one_demo"/>
+			<Option target="ibe_demo"/>
+			<Option target="ecfp_hdl"/>
+		</Unit>
+		<Unit filename="/home/falx/Development/PET/pairings_in_c/framework/src/base/std/bigint/bi_const.c">
+			<Option target="bench"/>
+			<Option target="test_ecfp2"/>
+			<Option target="test_sha"/>
+			<Option target="test_ecfp"/>
+			<Option target="test_bigint"/>
+			<Option target="ecfp2_hdl"/>
+			<Option target="test_bbkem"/>
+			<Option target="fp_hdl"/>
+			<Option target="gss_hwang_demo"/>
+			<Option target="test_fp12"/>
+			<Option target="experiment"/>
+			<Option target="test_fp2"/>
+			<Option target="test_fp"/>
+			<Option target="test_fp4"/>
+			<Option target="test_optate_pairing"/>
+			<Option target="pairing_demo"/>
+			<Option target="all_in_one_demo"/>
+			<Option target="ibe_demo"/>
+			<Option target="ecfp_hdl"/>
+		</Unit>
+		<Unit filename="/home/falx/Development/PET/pairings_in_c/framework/src/base/std/ec/ecfp.c">
+			<Option target="bench"/>
+			<Option target="test_ecfp2"/>
+			<Option target="test_sha"/>
+			<Option target="test_ecfp"/>
+			<Option target="test_bigint"/>
+			<Option target="ecfp2_hdl"/>
+			<Option target="test_bbkem"/>
+			<Option target="fp_hdl"/>
+			<Option target="gss_hwang_demo"/>
+			<Option target="test_fp12"/>
+			<Option target="experiment"/>
+			<Option target="test_fp2"/>
+			<Option target="test_fp"/>
+			<Option target="test_fp4"/>
+			<Option target="test_optate_pairing"/>
+			<Option target="pairing_demo"/>
+			<Option target="all_in_one_demo"/>
+			<Option target="ibe_demo"/>
+			<Option target="ecfp_hdl"/>
+		</Unit>
+		<Unit filename="/home/falx/Development/PET/pairings_in_c/framework/src/base/std/ec/ecfp2.c">
+			<Option target="bench"/>
+			<Option target="test_ecfp2"/>
+			<Option target="test_sha"/>
+			<Option target="test_ecfp"/>
+			<Option target="test_bigint"/>
+			<Option target="ecfp2_hdl"/>
+			<Option target="test_bbkem"/>
+			<Option target="fp_hdl"/>
+			<Option target="gss_hwang_demo"/>
+			<Option target="test_fp12"/>
+			<Option target="experiment"/>
+			<Option target="test_fp2"/>
+			<Option target="test_fp"/>
+			<Option target="test_fp4"/>
+			<Option target="test_optate_pairing"/>
+			<Option target="pairing_demo"/>
+			<Option target="all_in_one_demo"/>
+			<Option target="ibe_demo"/>
+			<Option target="ecfp_hdl"/>
+		</Unit>
+		<Unit filename="/home/falx/Development/PET/pairings_in_c/framework/src/base/std/fp/fp.c">
+			<Option target="bench"/>
+			<Option target="test_ecfp2"/>
+			<Option target="test_sha"/>
+			<Option target="test_ecfp"/>
+			<Option target="test_bigint"/>
+			<Option target="ecfp2_hdl"/>
+			<Option target="test_bbkem"/>
+			<Option target="fp_hdl"/>
+			<Option target="gss_hwang_demo"/>
+			<Option target="test_fp12"/>
+			<Option target="experiment"/>
+			<Option target="test_fp2"/>
+			<Option target="test_fp"/>
+			<Option target="test_fp4"/>
+			<Option target="test_optate_pairing"/>
+			<Option target="pairing_demo"/>
+			<Option target="all_in_one_demo"/>
+			<Option target="ibe_demo"/>
+			<Option target="ecfp_hdl"/>
+		</Unit>
+		<Unit filename="/home/falx/Development/PET/pairings_in_c/framework/src/base/std/fp/fp12.c">
+			<Option target="bench"/>
+			<Option target="test_ecfp2"/>
+			<Option target="test_sha"/>
+			<Option target="test_ecfp"/>
+			<Option target="test_bigint"/>
+			<Option target="ecfp2_hdl"/>
+			<Option target="test_bbkem"/>
+			<Option target="fp_hdl"/>
+			<Option target="gss_hwang_demo"/>
+			<Option target="test_fp12"/>
+			<Option target="experiment"/>
+			<Option target="test_fp2"/>
+			<Option target="test_fp"/>
+			<Option target="test_fp4"/>
+			<Option target="test_optate_pairing"/>
+			<Option target="pairing_demo"/>
+			<Option target="all_in_one_demo"/>
+			<Option target="ibe_demo"/>
+			<Option target="ecfp_hdl"/>
+		</Unit>
+		<Unit filename="/home/falx/Development/PET/pairings_in_c/framework/src/base/std/fp/fp2.c">
+			<Option target="bench"/>
+			<Option target="test_ecfp2"/>
+			<Option target="test_sha"/>
+			<Option target="test_ecfp"/>
+			<Option target="test_bigint"/>
+			<Option target="ecfp2_hdl"/>
+			<Option target="test_bbkem"/>
+			<Option target="fp_hdl"/>
+			<Option target="gss_hwang_demo"/>
+			<Option target="test_fp12"/>
+			<Option target="experiment"/>
+			<Option target="test_fp2"/>
+			<Option target="test_fp"/>
+			<Option target="test_fp4"/>
+			<Option target="test_optate_pairing"/>
+			<Option target="pairing_demo"/>
+			<Option target="all_in_one_demo"/>
+			<Option target="ibe_demo"/>
+			<Option target="ecfp_hdl"/>
+		</Unit>
+		<Unit filename="/home/falx/Development/PET/pairings_in_c/framework/src/base/std/fp/fp4.c">
+			<Option target="bench"/>
+			<Option target="test_ecfp2"/>
+			<Option target="test_sha"/>
+			<Option target="test_ecfp"/>
+			<Option target="test_bigint"/>
+			<Option target="ecfp2_hdl"/>
+			<Option target="test_bbkem"/>
+			<Option target="fp_hdl"/>
+			<Option target="gss_hwang_demo"/>
+			<Option target="test_fp12"/>
+			<Option target="experiment"/>
+			<Option target="test_fp2"/>
+			<Option target="test_fp"/>
+			<Option target="test_fp4"/>
+			<Option target="test_optate_pairing"/>
+			<Option target="pairing_demo"/>
+			<Option target="all_in_one_demo"/>
+			<Option target="ibe_demo"/>
+			<Option target="ecfp_hdl"/>
+		</Unit>
+		<Unit filename="/home/falx/Development/PET/pairings_in_c/framework/src/base/std/pbc/pbc_bn.c">
+			<Option target="bench"/>
+			<Option target="test_ecfp2"/>
+			<Option target="test_sha"/>
+			<Option target="test_ecfp"/>
+			<Option target="test_bigint"/>
+			<Option target="ecfp2_hdl"/>
+			<Option target="test_bbkem"/>
+			<Option target="fp_hdl"/>
+			<Option target="gss_hwang_demo"/>
+			<Option target="test_fp12"/>
+			<Option target="experiment"/>
+			<Option target="test_fp2"/>
+			<Option target="test_fp"/>
+			<Option target="test_fp4"/>
+			<Option target="test_optate_pairing"/>
+			<Option target="pairing_demo"/>
+			<Option target="all_in_one_demo"/>
+			<Option target="ibe_demo"/>
+			<Option target="ecfp_hdl"/>
+		</Unit>
+		<Unit filename="/home/falx/Development/PET/pairings_in_c/framework/src/bench_util.c">
+			<Option target="bench"/>
+			<Option target="test_ecfp2"/>
+			<Option target="test_sha"/>
+			<Option target="test_ecfp"/>
+			<Option target="test_bigint"/>
+			<Option target="ecfp2_hdl"/>
+			<Option target="test_bbkem"/>
+			<Option target="fp_hdl"/>
+			<Option target="gss_hwang_demo"/>
+			<Option target="test_fp12"/>
+			<Option target="experiment"/>
+			<Option target="test_fp2"/>
+			<Option target="test_fp"/>
+			<Option target="test_fp4"/>
+			<Option target="test_optate_pairing"/>
+			<Option target="pairing_demo"/>
+			<Option target="all_in_one_demo"/>
+			<Option target="ibe_demo"/>
+			<Option target="ecfp_hdl"/>
+		</Unit>
+		<Unit filename="/home/falx/Development/PET/pairings_in_c/framework/src/gss/gss_hwang.c">
+			<Option target="bench"/>
+			<Option target="test_ecfp2"/>
+			<Option target="test_sha"/>
+			<Option target="test_ecfp"/>
+			<Option target="test_bigint"/>
+			<Option target="ecfp2_hdl"/>
+			<Option target="test_bbkem"/>
+			<Option target="fp_hdl"/>
+			<Option target="gss_hwang_demo"/>
+			<Option target="test_fp12"/>
+			<Option target="experiment"/>
+			<Option target="test_fp2"/>
+			<Option target="test_fp"/>
+			<Option target="test_fp4"/>
+			<Option target="test_optate_pairing"/>
+			<Option target="pairing_demo"/>
+			<Option target="all_in_one_demo"/>
+			<Option target="ibe_demo"/>
+			<Option target="ecfp_hdl"/>
+		</Unit>
+		<Unit filename="/home/falx/Development/PET/pairings_in_c/framework/src/hash/Keccak-compact.c">
+			<Option target="bench"/>
+			<Option target="test_ecfp2"/>
+			<Option target="test_sha"/>
+			<Option target="test_ecfp"/>
+			<Option target="test_bigint"/>
+			<Option target="ecfp2_hdl"/>
+			<Option target="test_bbkem"/>
+			<Option target="fp_hdl"/>
+			<Option target="gss_hwang_demo"/>
+			<Option target="test_fp12"/>
+			<Option target="experiment"/>
+			<Option target="test_fp2"/>
+			<Option target="test_fp"/>
+			<Option target="test_fp4"/>
+			<Option target="test_optate_pairing"/>
+			<Option target="pairing_demo"/>
+			<Option target="all_in_one_demo"/>
+			<Option target="ibe_demo"/>
+			<Option target="ecfp_hdl"/>
+		</Unit>
+		<Unit filename="/home/falx/Development/PET/pairings_in_c/framework/src/hash/hashing.c">
+			<Option target="bench"/>
+			<Option target="test_ecfp2"/>
+			<Option target="test_sha"/>
+			<Option target="test_ecfp"/>
+			<Option target="test_bigint"/>
+			<Option target="ecfp2_hdl"/>
+			<Option target="test_bbkem"/>
+			<Option target="fp_hdl"/>
+			<Option target="gss_hwang_demo"/>
+			<Option target="test_fp12"/>
+			<Option target="experiment"/>
+			<Option target="test_fp2"/>
+			<Option target="test_fp"/>
+			<Option target="test_fp4"/>
+			<Option target="test_optate_pairing"/>
+			<Option target="pairing_demo"/>
+			<Option target="all_in_one_demo"/>
+			<Option target="ibe_demo"/>
+			<Option target="ecfp_hdl"/>
+		</Unit>
+		<Unit filename="/home/falx/Development/PET/pairings_in_c/framework/src/hash/sha1.c">
+			<Option target="bench"/>
+			<Option target="test_ecfp2"/>
+			<Option target="test_sha"/>
+			<Option target="test_ecfp"/>
+			<Option target="test_bigint"/>
+			<Option target="ecfp2_hdl"/>
+			<Option target="test_bbkem"/>
+			<Option target="fp_hdl"/>
+			<Option target="gss_hwang_demo"/>
+			<Option target="test_fp12"/>
+			<Option target="experiment"/>
+			<Option target="test_fp2"/>
+			<Option target="test_fp"/>
+			<Option target="test_fp4"/>
+			<Option target="test_optate_pairing"/>
+			<Option target="pairing_demo"/>
+			<Option target="all_in_one_demo"/>
+			<Option target="ibe_demo"/>
+			<Option target="ecfp_hdl"/>
+		</Unit>
+		<Unit filename="/home/falx/Development/PET/pairings_in_c/framework/src/ibe/bbkem.c">
+			<Option target="bench"/>
+			<Option target="test_ecfp2"/>
+			<Option target="test_sha"/>
+			<Option target="test_ecfp"/>
+			<Option target="test_bigint"/>
+			<Option target="ecfp2_hdl"/>
+			<Option target="test_bbkem"/>
+			<Option target="fp_hdl"/>
+			<Option target="gss_hwang_demo"/>
+			<Option target="test_fp12"/>
+			<Option target="experiment"/>
+			<Option target="test_fp2"/>
+			<Option target="test_fp"/>
+			<Option target="test_fp4"/>
+			<Option target="test_optate_pairing"/>
+			<Option target="pairing_demo"/>
+			<Option target="all_in_one_demo"/>
+			<Option target="ibe_demo"/>
+			<Option target="ecfp_hdl"/>
+		</Unit>
+		<Unit filename="/home/falx/Development/PET/pairings_in_c/framework/src/ibe/bbkem_param.c">
+			<Option target="bench"/>
+			<Option target="test_ecfp2"/>
+			<Option target="test_sha"/>
+			<Option target="test_ecfp"/>
+			<Option target="test_bigint"/>
+			<Option target="ecfp2_hdl"/>
+			<Option target="test_bbkem"/>
+			<Option target="fp_hdl"/>
+			<Option target="gss_hwang_demo"/>
+			<Option target="test_fp12"/>
+			<Option target="experiment"/>
+			<Option target="test_fp2"/>
+			<Option target="test_fp"/>
+			<Option target="test_fp4"/>
+			<Option target="test_optate_pairing"/>
+			<Option target="pairing_demo"/>
+			<Option target="all_in_one_demo"/>
+			<Option target="ibe_demo"/>
+			<Option target="ecfp_hdl"/>
+		</Unit>
+		<Unit filename="/home/falx/Development/PET/pairings_in_c/framework/src/param.c">
+			<Option target="bench"/>
+			<Option target="test_ecfp2"/>
+			<Option target="test_sha"/>
+			<Option target="test_ecfp"/>
+			<Option target="test_bigint"/>
+			<Option target="ecfp2_hdl"/>
+			<Option target="test_bbkem"/>
+			<Option target="fp_hdl"/>
+			<Option target="gss_hwang_demo"/>
+			<Option target="test_fp12"/>
+			<Option target="experiment"/>
+			<Option target="test_fp2"/>
+			<Option target="test_fp"/>
+			<Option target="test_fp4"/>
+			<Option target="test_optate_pairing"/>
+			<Option target="pairing_demo"/>
+			<Option target="all_in_one_demo"/>
+			<Option target="ibe_demo"/>
+			<Option target="ecfp_hdl"/>
+		</Unit>
+		<Unit filename="/home/falx/Development/PET/pairings_in_c/framework/src/rand.c">
+			<Option target="bench"/>
+			<Option target="test_ecfp2"/>
+			<Option target="test_sha"/>
+			<Option target="test_ecfp"/>
+			<Option target="test_bigint"/>
+			<Option target="ecfp2_hdl"/>
+			<Option target="test_bbkem"/>
+			<Option target="fp_hdl"/>
+			<Option target="gss_hwang_demo"/>
+			<Option target="test_fp12"/>
+			<Option target="experiment"/>
+			<Option target="test_fp2"/>
+			<Option target="test_fp"/>
+			<Option target="test_fp4"/>
+			<Option target="test_optate_pairing"/>
+			<Option target="pairing_demo"/>
+			<Option target="all_in_one_demo"/>
+			<Option target="ibe_demo"/>
+			<Option target="ecfp_hdl"/>
+		</Unit>
+		<Unit filename="/home/falx/Development/PET/pairings_in_c/framework/src/util.c">
+			<Option target="bench"/>
+			<Option target="test_ecfp2"/>
+			<Option target="test_sha"/>
+			<Option target="test_ecfp"/>
+			<Option target="test_bigint"/>
+			<Option target="ecfp2_hdl"/>
+			<Option target="test_bbkem"/>
+			<Option target="fp_hdl"/>
+			<Option target="gss_hwang_demo"/>
+			<Option target="test_fp12"/>
+			<Option target="experiment"/>
+			<Option target="test_fp2"/>
+			<Option target="test_fp"/>
+			<Option target="test_fp4"/>
+			<Option target="test_optate_pairing"/>
+			<Option target="pairing_demo"/>
+			<Option target="all_in_one_demo"/>
+			<Option target="ibe_demo"/>
+			<Option target="ecfp_hdl"/>
+		</Unit>
+		<Unit filename="/home/falx/Development/PET/pairings_in_c/framework/test/ecfp2_hdl.c">
+			<Option target="ecfp2_hdl"/>
+		</Unit>
+		<Unit filename="/home/falx/Development/PET/pairings_in_c/framework/test/ecfp_hdl.c">
+			<Option target="ecfp_hdl"/>
+		</Unit>
+		<Unit filename="/home/falx/Development/PET/pairings_in_c/framework/test/experiment.c">
+			<Option target="experiment"/>
+		</Unit>
+		<Unit filename="/home/falx/Development/PET/pairings_in_c/framework/test/fp_hdl.c">
+			<Option target="fp_hdl"/>
+		</Unit>
+		<Unit filename="/home/falx/Development/PET/pairings_in_c/framework/test/test_bbkem.c">
+			<Option target="test_bbkem"/>
+		</Unit>
+		<Unit filename="/home/falx/Development/PET/pairings_in_c/framework/test/test_bigint.c">
+			<Option target="test_bigint"/>
+		</Unit>
+		<Unit filename="/home/falx/Development/PET/pairings_in_c/framework/test/test_ecfp.c">
+			<Option target="test_ecfp"/>
+		</Unit>
+		<Unit filename="/home/falx/Development/PET/pairings_in_c/framework/test/test_ecfp2.c">
+			<Option target="test_ecfp2"/>
+		</Unit>
+		<Unit filename="/home/falx/Development/PET/pairings_in_c/framework/test/test_fp.c">
+			<Option target="test_fp"/>
+		</Unit>
+		<Unit filename="/home/falx/Development/PET/pairings_in_c/framework/test/test_fp12.c">
+			<Option target="test_fp12"/>
+		</Unit>
+		<Unit filename="/home/falx/Development/PET/pairings_in_c/framework/test/test_fp2.c">
+			<Option target="test_fp2"/>
+		</Unit>
+		<Unit filename="/home/falx/Development/PET/pairings_in_c/framework/test/test_fp4.c">
+			<Option target="test_fp4"/>
+		</Unit>
+		<Unit filename="/home/falx/Development/PET/pairings_in_c/framework/test/test_optate_pairing.c">
+			<Option target="test_optate_pairing"/>
+		</Unit>
+		<Unit filename="/home/falx/Development/PET/pairings_in_c/framework/test/test_sha.c">
+			<Option target="test_sha"/>
+		</Unit>
+		<Unit filename="/home/falx/Development/PET/pairings_in_c/framework/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/falx/Development/PET/pairings_in_c/framework/cmake/setDefaultSettings.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="/home/falx/Development/PET/pairings_in_c/framework/cmake/forceOutOfSourceBuild.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
