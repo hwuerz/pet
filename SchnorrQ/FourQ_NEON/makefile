@@ -45,11 +45,7 @@ LDFLAGS=
 
 OBJECTS=FourQ.o eccp2.o fp2_1271_NEON.o sha2.o
 OBJECTS_ECC_TEST=ecc_tests.o test_extras.o $(OBJECTS)
-OBJECTS_SCHNORRQ=schnorrq.o ecc_tests.o test_extras.o $(OBJECTS)
 OBJECTS_ALL=$(OBJECTS) $(OBJECTS_ECC_TEST) $(OBJECTS_SCHNORRQ)
-
-schnorrq: $(OBJECTS_SCHNORRQ)
-	$(CC) -pie -march=armv7-a -mfloat-abi=hard -mfpu=neon -Wl,--fix-cortex-a8 -Wl,--no-warn-mismatch -lm_hard -o schnorrq $(OBJECTS_SCHNORRQ)
 
 ecc_test: $(OBJECTS_ECC_TEST)
 	$(CC) -pie -march=armv7-a -mfloat-abi=hard -mfpu=neon -Wl,--fix-cortex-a8 -Wl,--no-warn-mismatch -lm_hard -o ecc_test $(OBJECTS_ECC_TEST)
@@ -72,11 +68,8 @@ test_extras.o: test_extras.c FourQ_internal.h
 ecc_tests.o: ecc_tests.c FourQ_internal.h
 	$(CC) $(CFLAGS) ecc_tests.c
 
-schnorrq.o: schnorrq.c FourQ_internal.h
-	$(CC) $(CFLAGS) schnorrq.c
-
 .PHONY: clean
 
 clean:
-	rm -f schnorrq ecc_test fp2_1271_NEON.o $(OBJECTS_ALL)
+	rm -f ecc_test fp2_1271_NEON.o $(OBJECTS_ALL)
 

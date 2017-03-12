@@ -25,6 +25,6 @@ export AR="$NDK/$MIDDLE/${PREF}ar --sysroot=$SYSROOT"
 
 make CC="$NDK/$MIDDLE/${PREF}gcc --sysroot=$SYSROOT" ARCH=ARM INTERLEAVE=TRUE MIX_ARM_NEON=TRUE
 
-adb push schnorrq /data/local/tmp
-adb shell "cd /data/local/tmp && ./schnorrq"
-adb shell "rm /data/local/tmp/schnorrq"
+adb push ecc_test /data/local/tmp
+adb shell "cd /data/local/tmp && ./ecc_test"
+adb shell "rm /data/local/tmp/ecc_test"
