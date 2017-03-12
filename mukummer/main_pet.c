@@ -24,7 +24,7 @@
 int KEY_LEN 	= 32; 		//32Byte = 32*8Bit = 256Bit <=> Security Level of 128 Bit
 int MSG_LEN 	= 140;		//in Byte
 int NUM_SIGN 	= 10000;		//number of signatures generated and verified
-int SIG_LEN 	= 48;		//the signature itself will be a 64Byte value - has no effect on programm!
+int SIG_LEN 	= 48;		//the signature itself will be a 48Byte value (variable irrelevant!)
 
 
 int main(void){
