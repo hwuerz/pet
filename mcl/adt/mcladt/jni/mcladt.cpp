@@ -1,12 +1,14 @@
 #include <jni.h>
 #include <string>
+#include <stdio.h>
 #include <sstream>
 #include <mcl/bn256.hpp>
 #include <time.h>
 
-int NUM_SIGN 	= 10000;	//number of signatures generated and verified
+//number of generated keys and signatures and verified signatures
+int NUM_SIGN 	= 10000;
 
-double bn256_sample(double* sign, double* verify)
+double bn256_sample(double* sign, double* verify, double* keygen)
 {
 	const char *aa = "12723517038133731887338407189719511622662176727675373276651903807414909099441";
 	const char *ab = "4168783608814932154536427934509895782246573715297911553964171371032945126671";
@@ -23,13 +25,23 @@ double bn256_sample(double* sign, double* verify)
 	const mpz_class b = 456;
 	Fp12 e1, e2;
 	BN::pairing(e1, P, Q);
+	
+	//PK
 	G2 aQ;
+	//Signature
 	G1 bP;
 	
-	//Signature creation
+	//KeyGen
 	clock_t time_start = clock();
 	for(int i = 0; i < NUM_SIGN; i++) {
 		G2::mul(aQ, Q, a);
+	}
+	time_start = clock() - time_start;
+	*keygen = ((double)time_start)/CLOCKS_PER_SEC/NUM_SIGN*1000;
+
+	//Signature creation
+	time_start = clock();
+	for(int i = 0; i < NUM_SIGN; i++) {
 		G1::mul(bP, P, b);
 	}
 	time_start = clock() - time_start;
@@ -50,10 +62,9 @@ extern "C" JNIEXPORT jstring JNICALL Java_com_herumi_mcladt_MainActivity_mclTest
 	try
 {
 	std::ostringstream oss;
-	double sign;
-	double verify;
-	bn256_sample(&sign, &verify);
-	oss << sign << "|" << verify;
+	double sign, verify, keygen;
+	bn256_sample(&sign, &verify, &keygen);
+	oss << "\nKeyGen: " << keygen << "\nSign: " << sign << "\nVerify: " << verify;
 	return env->NewStringUTF(oss.str().c_str());
 } catch (std::exception& e) {
 	return env->NewStringUTF(e.what());

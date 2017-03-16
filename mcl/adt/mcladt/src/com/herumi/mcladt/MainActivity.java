@@ -23,7 +23,9 @@ public class MainActivity extends Activity {
 		String out = "";
 		Fr s = new Fr();
 		s.setRand(); // secret key
+		
 		out += "secret key: " + s + "\n";
+		
 		G2 pub = new G2();
 		Bn256.mul(pub, Q, s); // public key = sQ
 
@@ -37,6 +39,7 @@ public class MainActivity extends Activity {
 		GT e2 = new GT();
 		Bn256.pairing(e1, H, pub); // e1 = e(H, s Q)
 		Bn256.pairing(e2, sign, Q); // e2 = e(s H, Q);
+
 		if (e1.equals(e2)) {
 			out += "BLS signature ok";
 		} else {
@@ -61,13 +64,13 @@ public class MainActivity extends Activity {
 			long startTime = System.currentTimeMillis();
 			s += BLSsignature();
 			long difference = System.currentTimeMillis() - startTime;
-			s += "\nTime needed for BLSsignature: " + difference + " ms\n";
+			//s += "\nTime needed for BLSsignature: " + difference + " ms\n";
 
 			System.loadLibrary("mcladt");
 			startTime = System.currentTimeMillis();
 			s += mclTest();
 			difference = System.currentTimeMillis() - startTime;
-			s += "\nTime needed for mclTest: " + difference + " ms\n";
+			//s += "\nTime needed for mclTest: " + difference + " ms\n";
 
 		} catch (Exception e) {
 			s = "ERR : " + e;
